@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5 text-center">
+<img src="{% static 'core/images/m.jpg' %}" alt="ProfilePic"
+class="img-thumbnail" width="200px" height="100px">
+<div class="mt-2 text-white mx-2">
+<h2 class="font-weight-bol .st-fontd">Hello</h2>
+<div>
+<p>  I am <b class="text-warning">VikasRana</b> having 1year 
+ of web deveploment experience for global businion. I have done <B class="text-warning">B.tech 
+ in Electrical Engg.</B> </p>
+ <p>  Framework or Web Application Framework is a 
+ complete set of software that is specifically built to carry out a given 
+ set of instructions based on API’s, </p> <p> <b class="text-warning">Web Service</b> , Multiple platform layout 
+ over the use of web resources(Domain, Hosting, Servers, Clouds, etc).
+
+</p>
+</div>
+</div>
+<div class="text center">
+  <a href=" {% url 'contact' %}" class="btn btn-outline-warning
+  my-3 mr-5">HireMe</a>
+  <a href=" {% url 'contact' %}" class="btn btn-outline-info">Contact</a>
+ </div>
+</div>
+{% endblock content %}
+
+
